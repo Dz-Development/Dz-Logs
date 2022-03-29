@@ -1,0 +1,24 @@
+# NEEDS skript-yml addon
+on load:
+   load yaml "plugins\dz-logs\config.yml" as "plugins\dz-logs\config.yml"
+   skript-yaml "plugins\dz-logs\config.yml" is empty:
+       set the header of "plugins\dz-logs\config.yml" to "  ___                    ___               " and " / __|_  _ _ __  ___ _ _| _ ) __ _ _ _  ___" and " \__ \ || | '_ \/ -_) '_| _ \/ _` | ' \(_-<" and " |___/\_,_| .__/\___|_| |___/\__,_|_||_/__/" and "          |_|                   by Sashie <3"
+       set skript-yaml value "TEST.pong" from "plugins\dz-logs\config.yml" to "true"
+       set skript-yaml value "TEST.bong" from "plugins\dz-logs\config.yml" to "false"
+ 
+ 
+
+       save yaml "plugins\dz-logs\config.yml"
+ 
+ 
+#       write "## This will be the type of notification sent on new punishments. Valid values are: '1' for messages, '2' for actionbars." at line 2 to file "plugins\SuperBans\config.yml"
+#       write "" at line 7 to file "plugins\dz-logs\config.yml"
+#       write "" at line 12 to file "plugins\dz-logs\config.yml"
+#       write "" at line 17 to file "plugins\dz-logs\config.yml"
+#       write "" at line 29 to file "plugins\dz-logs\config.yml"
+#       write "" at line 37 to file "plugins\dz-logs\config.yml"
+ 
+   set {OPTIONS::TEST::pong} to skript-yaml value "TEST.pong" of "plugins\dz-logs\config.yml"
+   set {OPTIONS::TEST::bong} to skript-yaml value "TEST.bong" of "plugins\dz-logs\config.yml"
+
+ 

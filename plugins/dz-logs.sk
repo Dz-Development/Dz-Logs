@@ -1,6 +1,6 @@
 command /wb2:
     permission: {@permission}
     trigger:
-        send a "post" request to "https://discord.com/api/webhooks/957321959165812877/mEY1aNR7FsO5HdO3kvuGf0pMc1dTzMRxth7W9jCA5isKUQ7Yqq5G1XZEWyYSmOwmUCIs" with the headers "Authorization: Token", and "Content-Type: application/json" and the body "{""embeds"": [{""tts"": false,""title"": ""title x"",""description"": ""desc x"",""color"": 11817970,""footer"": {""icon_url"": ""https://cdn.discordapp.com/embed/avatars/0.png"",""text"": ""footer text""},""fields"": [{""name"": ""1"",""value"": ""field 1""},{""name"": ""2"",""value"": ""field 2""}]}]}"
+        send a "post" request to "s" with the headers "Authorization: Token", and "Content-Type: application/json" and the body "{""embeds"": [{""tts"": false,""title"": ""title x"",""description"": ""desc x"",""color"": 11817970,""footer"": {""icon_url"": ""https://cdn.discordapp.com/embed/avatars/0.png"",""text"": ""footer text""},""fields"": [{""name"": ""1"",""value"": ""field 1""},{""name"": ""2"",""value"": ""field 2""}]}]}"
         set {_resp} to the last http response
         #broadcast {_resp}
